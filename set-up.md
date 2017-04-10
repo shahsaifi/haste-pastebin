@@ -10,18 +10,18 @@ $ sudo apt-get install g++ curl libssl-dev apache2 apache2-utils git-core redis-
 $ systemctl enable redis-server
 $ systemctl start redis-server
 ```
-# Test redis-server reachability
+### Test redis-server reachability
 ```
 $ redis-cli -h localhost ping
 PONG
 ```
-2. Install node.js (for node7 - replace 6 with 7)
+3. Install node.js (for node7 - replace 6 with 7)
 ```
 $ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 $ sudo apt-get install -y nodejs build-essential
 ```
 
-3. Install and start hastebin
+4. Install and start hastebin
 ```
 $ git clone git@github.com:shahsaifi/haste-pastebin.git
 $ cd haste-server
